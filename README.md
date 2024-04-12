@@ -1,21 +1,18 @@
-import forca
-import adivinhacao
-
-def escolhe_jogo():
+def jogar():
     print("*********************************")
-    print("*******Escolha o seu jogo!*******")
+    print("***Bem vindo ao jogo da Forca!***")
     print("*********************************")
 
-    print("(1) Forca (2) Adivinhação")
+    palavra_secreta = "banana"
 
-    jogo = int(input("Qual jogo? "))
+	enforcou = False
+	acertou = False
 
-    if(jogo == 1):
-        print("Jogando forca")
-        forca.jogar()
-    elif(jogo == 2):
-        print("Jogando adivinhação")
-        adivinhacao.jogar()
+	while(not acertou and not enforcou):
+	    print("Jogando...")
+
+    print("Fim do jogo")
+
 
 if(__name__ == "__main__"):
-    escolhe_jogo()
+    jogar()
